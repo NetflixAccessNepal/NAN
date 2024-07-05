@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription - Nepflix</title>
+    <!-- Add your CSS links here -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="subscription.html">Subscription</a></li>
+                <!-- Add more navigation links as needed -->
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <h1>Subscription Options</h1>
+        <div class="option">
+            <h2>Buy Option</h2>
+            <p>Redirect to Facebook for personal dealings.</p>
+            <a href="https://www.facebook.com/yourpage" target="_blank" class="button">Buy Now</a>
+        </div>
+        <div class="option">
+            <h2>Free Option</h2>
+            <p>Unlock tasks to earn a free Netflix subscription:</p>
+            <button onclick="unlockTask('subscribe')">Subscribe on YouTube</button>
+            <button onclick="unlockTask('follow')">Follow on Facebook</button>
+            <!-- Add more unlock buttons for other tasks -->
+        </div>
+    </div>
+
+    <!-- Your JavaScript for unlocking tasks -->
+    <script>
+        function unlockTask(task) {
+            // Add logic to handle unlocking tasks (e.g., change button styles or links)
+            // Example: Redirect to YouTube or Facebook for respective tasks
+            if (task === 'subscribe') {
+                window.location.href = "https://www.youtube.com/yourchannel";
+            } else if (task === 'follow') {
+                window.location.href = "https://www.facebook.com/yourpage";
+            }
+            // Add more conditions for other tasks
+        }
+    </script>
+</body>
+</html>
